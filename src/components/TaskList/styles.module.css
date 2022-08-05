@@ -1,0 +1,121 @@
+.container {
+  margin-top: 4rem;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container header strong {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--blue-500);
+}
+
+.container header strong.purple{
+  color: var(--purple-500);
+}
+
+
+.container header span {
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 16px;
+  padding: 0.125rem 0.5rem;
+}
+
+.emptyTaskList {
+  border: 0;
+  border-top: 1px solid var(--gray-400);
+  margin-top: 1.5rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+  padding: 4rem;
+}
+
+.emptyTaskList strong {
+  margin-top: 1rem;
+}
+
+
+.list {
+  margin-top: 1.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem; 
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+} 
+
+.list li + li {
+  margin-top: 0.75rem;
+}
+
+.list li p {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.list li.done p {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.list li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+
+  border-radius: 4px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.checkButton {
+  transition: color .2s;
+  color: var(--blue-500);
+}
+
+.checkButton:hover {
+  color: var(--blue-700);
+}
+
+.done .checkButton {
+  transition: background .2s;
+  color: var(--gray-100);
+  background: var(--purple-700);
+  border-radius: 50%;
+}
+
+.done .checkButton:hover {
+  background: var(--purple-500);
+}
+
+
+.trashButton {
+  transition: color .2s, background .2s;
+  color: var(--gray-300);
+  background: transparent;
+}
+
+.trashButton:hover {
+  color: var(--red-500);
+  background: var(--gray-400);
+}

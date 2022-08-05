@@ -1,0 +1,62 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+@media (max-width: 768px) {
+  
+  html {
+    font-size: 87.5%;
+  }
+  
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.taskForm {
+  display: flex;
+  gap: 8px;
+  margin-top: -1.75rem;
+}
+
+.taskForm input {
+  flex: 1;
+  
+  padding: 16px;
+  background: var(--gray-500);  
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);  
+  border-radius: 8px;
+}
+.taskForm input:focus {
+  border: 1px solid var(--purple-700);  
+}
+
+.taskForm button {
+  display: flex;
+  align-items: center;
+
+  padding: 16px;
+  background: var(--blue-700);  
+  color: var(--gray-100);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.taskForm button:hover {
+  background: var(--blue-500);  
+}
+
+.taskForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed
+}
+
+.taskForm button svg {
+  margin-left: 0.5rem;
+}
